@@ -104,7 +104,12 @@ data out.</td>
 <td>Your answers to the setup questions (for example your age, daily
 screen time, how active you are, and your goals). Used to suggest a
 starting rate, show your personal numbers, and decide whether to ask
-about usage statistics.</td>
+about usage statistics. Where the law requires it, Solrun also asks
+Apple for your age range (under 13, 13 to 15, 16 to 17, or 18 and over),
+and Apple shows its own screen for this. Solrun keeps only that age
+range and the date it asked, and uses it only to apply age rules, such
+as keeping usage statistics off. If your age range and the age you
+entered differ, the younger one applies to those rules.</td>
 </tr>
 <tr>
 <td>Settings</td>
@@ -237,8 +242,9 @@ PostHog to discard IP addresses and not to work out your location from
 them. PostHog stores this data in the United States.</p>
 <h3 id="when-usage-statistics-are-on">When usage statistics are on</h3>
 <p>Solrun decides the default from your App Store country, your iPhone's
-region setting, your time zone, and the age you enter during setup. The
-age you enter stays on your iPhone and is never sent.</p>
+region setting, your time zone, and the age you enter during setup (or
+the age range Apple gives Solrun, if it is younger). Both stay on your
+iPhone and are never sent.</p>
 <p>"Europe" below means the European Union, European Economic Area,
 United Kingdom, or Switzerland. Solrun uses the Europe rules if your App
 Store country or your iPhone's region setting is in one of these, or if
@@ -479,11 +485,15 @@ Data on your iPhone is protected by iOS, including device encryption
 when your phone is locked.</p>
 <h2 id="children">Children</h2>
 <p>Solrun is not directed to children under 13. If you enter an age of
-12 or under during setup, usage statistics stay off and nothing is sent
-to PostHog (see "When usage statistics are on"). Superwall still
-receives the subscription data needed for the app to work. If you
-believe a child under 13 has used Solrun and data about them reached us
-or our service providers, email <a
+12 or under during setup, or Apple tells Solrun your age range is under
+13, usage statistics stay off and nothing is sent to PostHog (see "When
+usage statistics are on"). Where the law requires it (for example in
+Texas), Solrun asks Apple for your age range during setup and about once
+a year after that. It keeps your age range on your iPhone, never sends
+it to us or our service providers, and uses it only to apply age rules.
+Superwall still receives the subscription data needed for the app to
+work. If you believe a child under 13 has used Solrun and data about
+them reached us or our service providers, email <a
 href="mailto:support@clankermode.com">support@clankermode.com</a>, with
 the support ID from the app's settings if you can, and we will have it
 deleted.</p>
